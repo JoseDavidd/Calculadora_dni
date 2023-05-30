@@ -1,10 +1,8 @@
-def calculadora_dni():
-    numero_dni = int(input("Introduce tu numero de DNI: "))
-    letra_dni = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
-    formula = numero_dni % len(letra_dni)
-    return letra_dni[formula]
-print(f"{numero_dni}-{formula}")
-calculadora_dni()
+def calculadora_dni(numero_dni):
+    letra = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+    formula = numero_dni % len(letra)
+    return letra[formula] 
+
 
 
 #Esta letra se obtiene a partir del número completo del DNI dividido entre el número 23.
